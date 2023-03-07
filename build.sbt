@@ -11,9 +11,10 @@ lazy val root = (project in file("."))
   .enablePlugins(AssemblyPlugin)
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "2.4.8",
-  "org.apache.spark" %% "spark-sql" % "2.4.8",
-  "com.amazonaws" % "aws-java-sdk" % "1.11.698"
+  "org.scalatest" %% "scalatest" % "3.2.15" % "test",
+  "org.apache.spark" %% "spark-core" % "3.3.2",
+  "org.apache.spark" %% "spark-sql" % "3.3.2",
+  "com.amazonaws" % "aws-java-sdk" % "1.12.411"
 )
 
 // Define assembly settings
